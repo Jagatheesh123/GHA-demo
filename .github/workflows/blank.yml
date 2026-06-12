@@ -3,18 +3,22 @@
 name: hello world
 
 on: workflow_dispatch
- 
 jobs:
-
-  build:
-  
+  Test-1:
     runs-on: ubuntu-latest
-
     steps:
-      
-      - name: Hi all
-        run: |
-         echo "this is 1st"
-         echo "this is 2nd"
+      - name: build step
+        run: echo "Test -A"
 
+  Test-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build step
+        run: echo "Test -B"
+         
+  Test-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build step
+        run: echo "Test -C"
    
