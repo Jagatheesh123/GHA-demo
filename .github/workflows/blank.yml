@@ -13,6 +13,8 @@ jobs:
     steps:
       
       - name: Hi all
-        run: echo Hello, world!
+        run: |
+         echo "this is 1st"
+         echo "this is 2nd"
 
    
